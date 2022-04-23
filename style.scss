@@ -58,11 +58,14 @@ body {
 .card {
   background-color: #4c2885;
   max-width: 800px;
+  min-height: 200px;
   border-radius: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   margin: 0 1.5rem;
 
@@ -78,14 +81,19 @@ body {
   float: left;
   border-radius: 50%;
   border-style: solid;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
+  border: 1rem solid #2a2a72;
+
+  @media (max-width:32em) {
+    margin-bottom: 2rem;
+  }
 }
 
 .user-info {
   color: #eee;
   font-size: 1.4rem;
   margin-left: 2rem;
-
+  min-width: 400px;
   &>* {
     margin-bottom: 2rem;
   }
